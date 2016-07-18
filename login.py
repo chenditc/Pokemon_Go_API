@@ -7,7 +7,7 @@ from collections import OrderedDict
 def login_pokemon(user,passw):
 	print '[!] doing login for:',user
 	try:
-		head={'User-Agent':'niantic'}
+		head={'User-Agent':'Niantic App'}
 		r=config.s.get(config.login_url,headers=head)
 		jdata=json.loads(r.content)
 			
